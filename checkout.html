@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Foodie</title>
+  <link rel="stylesheet" href="checkout.css">
+   <link rel="icon" href="image.png">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🛒 Checkout - Maha Recipe</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="orders.html">My Orders</a>
+      <a href="auth.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <center>
+    <section class="checkout-form">
+      <h2>Place Your Order</h2>
+      <form id="orderForm">
+        <label>Full Name:
+          <input type="text" name="name" required />
+        </label> <br>
+
+        <label>Phone Number:
+          <input type="tel" name="phone" required />
+        </label><br>
+
+        <label>Food Item:
+          <input type="text" name="item" required />
+        </label><br>
+
+        <label>Quantity:
+          <input type="number" name="quantity" min="1" required />
+        </label><br>
+
+        <label>Delivery Address:
+          <textarea name="address" required></textarea>
+        </label><br>
+
+        <label>Google Maps Location (URL):
+          <input type="url" name="map" placeholder="Paste your location link..." />
+        </label><br>
+
+        <label>Payment Method:
+          <select name="payment" required>
+            <option value="upi">UPI</option>
+            <option value="cod">Cash on Delivery</option>
+            <option value="card">Credit/Debit Card</option>
+          </select>
+        </label><br>
+
+        <button type="submit">✅ Place Order</button><br>
+      </form>
+
+      <div id="confirmation" style="display:none;">
+        <h3>🎉 Thank you! Your order is placed.</h3>
+        <p>Your food will be delivered after <strong>2 hours</strong>.</p>
+      </div>
+    </section>
+    </center>
+  </main>
+
+  <footer>
+    <p>© 2025 Maha Recipe. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      this.style.display = "none";
+      document.getElementById("confirmation").style.display = "block";
+    });
+  </script>
+</body>
+</html>

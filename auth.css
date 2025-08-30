@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fff4e6, #ffe5dc);
+  padding: 2rem;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ff7043;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Container */
+.auth-container {
+  max-width: 400px;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.auth-container h2 {
+  text-align: center;
+  color: #ff5722;
+  margin-bottom: 1.5rem;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin: 0.7rem 0 0.3rem;
+  font-weight: bold;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  background: #fffdfa;
+}
+
+/* Submit Button */
+button {
+  background-color: #ff5722;
+  color: white;
+  padding: 0.9rem;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Switch Link */
+.switch {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.switch a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .auth-container {
+    padding: 1.5rem;
+  }
+}

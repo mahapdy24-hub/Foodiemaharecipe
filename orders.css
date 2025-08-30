@@ -1,0 +1,50 @@
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf2;
+    color: #333;
+    padding: 20px;
+  }
+h1{
+  background-color: red;
+  display: block;
+}
+  section {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+
+  #ordersSection {
+    color:black;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #d62828;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #a4161a;
+  }

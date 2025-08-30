@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZingoBite - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image.png">
+  <style>
+    .search-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 500px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #e74c3c;
+  border-radius: 5px;
+  margin-bottom: 0.90rem;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* ✅ spacing between buttons */
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.category-btn {
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-btn:hover {
+  background-color: #8b180b59;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  background-color: #fffaf0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+  .container{
+    background-image: url("https://img.freepik.com/premium-photo/green-banana-leaf-texture-background_45024-1231.jpg");
+  }
+
+</style>
+    </head>
+<body>
+  <header>
+    <div class="navbar">
+  <div class="logo"><img href="https://static.vecteezy.com/system/resources/thumbnails/001/500/312/small_2x/bullet-menu-icon-free-vector.jpg"></div>
+    <h1>🍽️ ZingoBite</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+    <div id="menu">
+      <a href="menu.html">Menu|</a>
+      <a href="auth.html">Login|</a>
+      <a href="orders.html">My Orders|</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+<main>
+  <nav>
+    <section class="hero">
+      <h2 style="color: rgb(240, 96, 96);">Delicious Food Delivered Fast 🍕🍔🍜</h2> <br>
+      <p style="color:red ;">Order now from 500+ dishes, Fresh, Fast, Flavorful.</p> <br>
+  <div class="search-container">
+      <input id="searchInput" type="text" placeholder="Search your favorite dish..." name="search">
+  <button  class="category-buttons" type="submit">Search</button>
+ <script>
+  const searchInput = document.getElementById('searchInput');
+  const categoryButtons = document.querySelectorAll('.category-btn');
+  const menuitem = document.querySelectorAll('.menu-item');
+
+  // Search filtering
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase().trim();
+    menuitem.forEach(item => {
+      const name = item.querySelector('h3').textContent.toLowerCase();
+      const desc = item.querySelector('p').textContent.toLowerCase();
+      if (name.includes(query) || desc.includes(query)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+
+  // Category filtering
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selected = button.getAttribute('data-name');
+      menuitem.forEach( item=> {
+        const category = item.getAttribute('data-name');
+        if (selected === 'all' || category === selected) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      // Reset search field
+      searchInput.value = '';
+    });
+  });
+</script>
+
+
+  </div>
+</section>    
+</nav>
+</form>
+ <div class="container">
+    <h1>Inspiration for your first order</h1>
+    <div class="food-categories">
+     <div class="food-item"> 
+      <a href="biryani.html">
+     <img src="https://b.zmtcdn.com/data/o2_assets/bf2d0e73add1c206aeeb9fec762438111727708719.png" alt="Biryani" />
+      </a>
+        <h2>Biryani</h2>
+        </div>
+        <div class="food-item">
+      <a href="pizza.html">
+        <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Pizza" />
+        </a>
+        <h2>Pizza</h2>
+        </div>
+      <div class="food-item">
+       <a href="chicken.html">
+        <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="Chicken" />
+      </a>
+        <h2>Chicken</h2>
+      </div>
+      <div class="food-item">
+        <a href="burger.html">
+        <img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png" alt="Burger" />
+        </a>
+        <h2>Burger</h2>
+      </div>
+      <div class="food-item">
+       <a href="thali.html">
+         <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" alt="Thali" />
+         </a>
+        <h2>Thali</h2>
+      </div>
+      <div class="food-item">
+        <a href="vegmeal.html">
+        <img src="https://b.zmtcdn.com/data/dish_photos/bda/9cdab6d5f275b8d2532e3878134ddbda.jpg" alt="Veg Meal" />
+        </a>
+        <h2>Veg Meal</h2>
+      </div>
+      <div class="food-item">
+        <a href="idli.html">
+        <img src="https://b.zmtcdn.com/data/dish_images/d9766dd91cd75416f4f65cf286ca84331634805483.png" alt="Idli" />
+        </a>
+        <h2>Idli</h2>
+      </div>
+      <div class="food-item">
+        <a href="northindian.html">
+        <img src="https://b.zmtcdn.com/data/o2_assets/019409fe8f838312214d9211be010ef31678798444.jpeg" alt="North Indian" />
+        </a>
+        <h2>North Indian</h2>
+      </div>
+      <div class="food-item">
+        <a href="rolls.html">
+        <img src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png" alt="Veg Meal" />
+        </a>
+        <h2>Rolls</h2>
+      </div>
+      <div class="food-item">
+        <a href="cake.html">
+        <img src="https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png" alt="Veg Meal" />
+        </a>
+        <h2>Cake</h2>
+      </div>
+      <div class="food-item">
+        <a href="dosa.html">
+        <img src="https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png" alt="Veg Meal" />
+        </a>
+        <h2>Dosa</h2>
+      </div>
+      <div class="food-item">
+        <a href="paneer.html">
+          <img src="https://b.zmtcdn.com/data/dish_images/e44c42ff4b60b025225c8691ef9735b11635781903.png" alt="Veg Meal" />
+          </a>
+        <h2>Paneer</h2>
+        </div>
+    </div>
+    </main>
+     <footer>
+    <p>© 2025 Maha Recipe. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Order - Maha Recipe</title>
+  <link rel="stylesheet" href="order.css">
+   <link rel="icon" href="image.png">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+    .order-form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #e65100;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 500;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      background: #ff5722;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .confirmation {
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+      color: green;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="order-form-container">
+    <h1>Place Your Order</h1>
+    <form id="orderForm">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="dish">Select Dish</label>
+      <select id="dish" name="dish">
+        <option>Cheese Pizza</option>
+        <option>Veggie Burger</option>
+        <option>White Sauce Pasta</option>
+        <option>Paneer Tikka</option>
+        <option>Hyderabadi Biryani</option>
+      </select>
+
+      <label for="address">Delivery Address</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="location">Live Location URL (Google Maps)</label>
+      <input type="url" id="location" name="location">
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment">
+        <option>UPI</option>
+        <option>Credit/Debit Card</option>
+        <option>Cash on Delivery</option>
+      </select>
+
+      <button type="submit">Confirm Order</button>
+    </form>
+
+    <div id="confirmationMessage" class="confirmation" style="display: none;">
+      ✅ Your order is confirmed. It will be delivered after 2 hours!
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('orderForm');
+    const confirmation = document.getElementById('confirmationMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      form.style.display = 'none';
+      confirmation.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

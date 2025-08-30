@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Orders - Maha Recipe</title>
+   <link rel="icon" href="image.png">
+  <link rel="stylesheet" href="orders.css">
+  <link rel="script" href="orders.js">
+  <link rel="setting" href="orders.env">
+</head>
+<body>
+  <header>
+    <h1>📦Orders History</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="checkout.html">Order</a>
+      <a href="auth.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+     <h1>🧾 Your Orders</h1>
+<ul id="ordersList"></ul>
+
+<script>
+  async function loadOrders() {
+    try {
+      const response = await fetch('/api/my-orders', {
+        headers: {
+          'Authorization': 'Bearer ' + localStorage.getItem('token') // if using JWT
+        }
+      });
+
+      const orders = await response.json();
+
+      const list = document.getElementById('ordersList');
+      list.innerHTML = "";
+
+      orders.forEach(order => {
+        const li = document.createElement('li');
+        li.textContent = `${order.itemName} - Qty: ${order.quantity}`;
+        list.appendChild(li);
+      });
+
+    } catch (err) {
+      console.error("Error loading orders:", err);
+    }
+  }
+
+  loadOrders();
+</script>
+
+  <footer>
+    <p>© 2025 Maha Recipe. All rights reserved.</p>
+  </footer>
+
+ 

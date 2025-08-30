@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup - Maha Recipe</title>
+  <link rel="stylesheet" href="auth.css">
+   <link rel="icon" href="image.png">
+  <script src="script.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #ffe0b2, #ffcc80);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .auth-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      color: #e65100;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #ff5722;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .switch {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+    .switch span {
+      color: #e65100;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <h2 id="formTitle">Login</h2>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="submitBtn">Login</button>
+    <div class="switch">
+      <span id="toggleForm">Don't have an account? Sign Up</span>
+    </div>
+  </div>
+
+  <script>
+    const formTitle = document.getElementById('formTitle');
+    const toggleForm = document.getElementById('toggleForm');
+    const submitBtn = document.getElementById('submitBtn');
+    let isLogin = true;
+
+    toggleForm.addEventListener('click', () => {
+      isLogin = !isLogin;
+      formTitle.innerText = isLogin ? 'Login' : 'Sign Up';
+      submitBtn.innerText = isLogin ? 'Login' : 'Sign Up';
+      toggleForm.innerText = isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login";
+    });
+
+    submitBtn.addEventListener('click', () => {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (!email || !password) {
+        alert('Please enter email and password');
+        return;
+      }
+
+      if (isLogin) {
+        const storedEmail = localStorage.getItem('userEmail');
+        const storedPassword = localStorage.getItem('userPassword');
+
+        if (email === storedEmail && password === storedPassword) {
+          alert('Login successful!');
+          window.location.href = 'index.html';
+        } else {
+          alert('Invalid credentials');
+        }
+      } else {
+        localStorage.setItem('userEmail', email);
+        localStorage.setItem('userPassword', password);
+        alert('Signup successful! Please login.');
+        toggleForm.click();
+      }
+    });
+  </script>
+</body>
+</html>

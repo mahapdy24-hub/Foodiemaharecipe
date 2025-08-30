@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maha Recipe - Menu</title>
+  <link rel="stylesheet" href="menu.css">
+   <link rel="icon" href="image.png">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .menu-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      color: #e65100;
+    }
+    .menu-item p {
+      margin: 0 10px 5px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .menu-item .price {
+      font-weight: bold;
+      color: #222;
+    }
+    .btn {
+      background: #ff5722;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Our Delicious Menu</h1>
+    <div class="menu-grid">
+      <div class="menu-item" data-name="Cheese Pizza">
+        <img src="https://www.cheesehouse.com/wp-content/uploads/2020/10/pizza-2.jpg" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Classic cheese pizza with fresh mozzarella.</p>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+      <div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.BFXTXw0InfmOmJkzlSW6FgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Burger">
+        <h3>Veg Burger</h3>
+        <p>Crispy patty with lettuce, tomato, and mayo.</p>
+        <p class="price">₹149</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.spiceupthecurry.com/wp-content/uploads/2023/02/white-sauce-pasta-2.jpg" alt="Pasta">
+        <h3>White Sauce Pasta</h3>
+        <p>Rich creamy sauce with penne pasta.</p>
+        <p class="price">₹220</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+      <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.j6VH4YcKhjTrGLuhTsH5wwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tikka">
+        <h3>Paneer Tikka</h3>
+        <p>Grilled cottage cheese with spices.</p>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+     <div class="menu-item">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken-.jpg" alt="Tikka">
+        <h3>Butter Chicken</h3>
+        <p>Creamy tomato-based chicken curry.</p>
+        <p class="price">₹200</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+      <div class="menu-item">
+        <img src="https://genv.org/wp-content/uploads/2023/02/17-Vegetable-Biryani.jpg" alt="Tikka">
+        <h3>Veg Biryani</h3>
+        <p>Spiced rice with vegetables.</p>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.k4xC3lQs22-ibkUtKVCYVAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tikka">
+        <h3>Chicken Biryani</h3>
+        <p>Aromatic rice and chicken.</p>
+        <p class="price">₹220</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div> 
+       <div class="menu-item">
+        <img src="https://i0.wp.com/bakaasur.com/wp-content/uploads/2022/12/chole-bhature.jpg?w=1200&ssl=1" alt="Tikka">
+        <h3>Chole Bhature</h3>
+        <p>Spicy chickpeas with fried bread.</p>
+        <p class="price">₹90</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://i.pinimg.com/originals/99/40/72/9940727be218793f5de3450a6cc9cd14.jpg">
+        <h3>Dosa & Sambar</h3>
+        <p>South Inadian Crispy dosa.</p>
+        <p class="price">₹40</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/06/Authentic-Punjabi-Rajma-Recipe.jpg" alt="Tikka">
+        <h3>Rajma Chawal</h3>
+        <p>Kidney beans curry with rice.</p>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://myfoodstory.com/wp-content/uploads/2018/08/Dal-Makhani-New-4.jpg?fit=1200,9999" alt="Tikka">
+        <h3>Dal Makhani</h3>
+        <p>Slow-cooked black lentils.</p>
+        <p class="price">₹90</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="data:image/webp;base64,UklGRngMAABXRUJQVlA4IGwMAAAQOgCdASqxALQAPp1Mn0qlpKKiJhhK4LATiWIA1xht0CSmrg/pfJl2sRqu5fPL/p/Wx5hv+L9OXoj8w3mhf879ufdz6AH+k6mj+3eo1/E/8z1yD+Cq38+vaXMB/C8wK0q1aJPHNJ9N9S//Cesp33f2zfPfsh7F/7HMj5j4zocAepR66QLcV1CdH6q5Ur6TNrpk2jVqL1zgj2Jirwrkj1H0qtO3rp+WIOw7N6zVIhTrQr9ZVghgTcuSNYEEikR3YAPKySvKWup/nkmC6sl9eatTG+59husyLTCfzUXcqFYo5TaSbGm6AAPw2cDEndoZwl2h3pNO20fg0oQBbmf0/60lDdegH1ReP4MVfpEBKLj5jsRIFJ7ejfL/zocRWXIHKbCu9KngpSQwnkUDGx43x5JC0MoX8ekxF0sew/DO30U61hHh8jmf1cRBTgIyPuEcWnWeed0B0kJIiE3oWrTiLvggkm68c6EjBHHIewRyBjADXGuUczNMHmqmfw/K83+2KXBCwts66II9EGHo07ylVdA8O1rtyCVpT3BzDEuUiCmob/WD0itX23EV339m72AMnX7wxA/m+Ex1vgXkSSwEW8qZsM65p6zr5PSeZt9NMxBcRI7VhWyCqA/YAAD+/KHBA3i1+wqkKE11L9qGLyJup369uphvsvAABrXXbQ+K3wy8pjnjPOQ3+Xr+Z28I9cECiM79R3eG2yHffcyZ6jiMYOBhJ981R9psKkbGJ/9iLCGGpqNK74kCUFaOHD6WjVE/ejyJ/Y7M3wCIgAM6bN4Zm2qLkGSu9WdvSqgqYXt78++XJ2afzxxXNumrc+2noCpdR/Gg7EHNnJycj+iaz/P3dXnJ6D6U2m8bINYQnuqCXruvsYx7veqpe7zLlzZp+rqhSoGz+08+wU8zYCRN8Pq0xrHtQny1K53BNQgQBzWxcn/ojjMNQelwSo+iJRSqiL9UjYCcOIwVf+3Ia8ENI/76L39rCTEmWKEuzVfm2QvgdFHZ14A1Fkg9Mj/tuqOVMp/ZyFlCMyHdKv8mZMr39Q7P+WXKFlMeRMCPlMInSplzM33cB/qgahJ0oaaqd+CqXRwSa31XkRop2SyP5X94nV17V3TraOaQy3abKAUEqqyLctj1uMwulCOW/5j2JSkxCg1Vg3OzKNFEsu89oGUmR65Ktb0L8WA+CaA3Ajd/XsW07vPkfbGG21TOHDY+4tMNpl/ERK8R7QvIoYj5ZLQMZ46RLRyyUR13owIK8o3ix+4Ye1pFzyNexpHmJf28ssuooTWuNeyuKdE6pK4JOZmnxjLsKqfH6IbD5Zz+0OPoUiN6BBVl9LCOjut1T5udPGSoEedTEMUNTJz6WXJMgUGhHZdYVvqGhq5Y3egL6LLamGOLpKCeNMD9zLFJigUD2s05QRDceHpwbfH2ZDH0WTgCk1QbDSQ2HJZHH4F7c2Fz3ILiHbphAvwHfn4e3u9NP2gJ3Vy+AMB9a2+Mk7Hm2khP6g3VUW49UdOE8oOL3WLE2FojYxYEZhoPSUQAubXjWGMYTtioc8CKbWYlX4Ofu/kzxowbV3ibMZfauW80iABEvWWLs0WkNUlUUSN1FGnMqBZsBjwR3bb4qo5cFIcFYnrdpP1mEfREBY1sxBRWmxmKK7+aJACGBsU+8tjALCkDQY0YfZyegEhL2fERM+aMpDSu7nmTRehLWMoAsiYhIuCxxvly/DlNwxhNwRMq66dvWuqloclAIpwivzMdfqbH2pz+P2SAMppaG/lMBevkpBmqSe51nC+job7o7qUa3BgHbs/K46tje7IOR8r/95Pxrvr4h7+luIuKAViRw2T3ydMpbDL2q4/mDiKwy9TAadMG/rjnHkBFuOcQ4nGJFtBCiuRMFedX/rkBO+0U6/8mUf8JhMoxJeJNZRCbSrSrMAghs9KWiA3L7+BtslYCWrfLfhgpvKZHxNlRdifVr+3RClH/WkIezrapeFV2fdiWiqyiKFycTCJV/878srRZDWaQPJbPeEmKAimL+++G3JJUeFpzJLEYZT7z3muRdts8O7XR/SwE4pT/nZOxg/GA4Nhp4pWNossM3L6B7bO1Xe9socasLxIl8uXGRzDrhbW2yp76bylZpWCvEjq5cS0HPp1rWTDYpYwRtMg4a6wkY6o38mZ+POett6C9I2PHOnhcRCSw/uXAJeW/BlPRcids6wOBXMvXNFIeEsRPrnG5RnM/+dNYvmLc8Mq7HDY6JjYcIF5Ax+x/bBD42MfKqT73/6bzo78fdDkQ6i/NdQNXLBKPkyVb4CzAg3cVYAiL1whh4R8VE/mE0FXAIjYONcAvvoRLiS4aI3rsxS7qHSU+ipJld8Qr2gatCZ6kBLsbPzkPG5yVb4i/ezgEkWOkWA1whVmQ4kdV9DBtbjxRRHerkWjOSzEgb30CUClZDVoLmQ3JKR/7ivvuDK8980ZJv8k9AsaW01MTSxjPTHINKEPuFrSLKJboBpkkd9gcfGMkdlNapNgA2xHf6RSV+lX504lPuHldnrJM1ArgfvQTQAOWt8E0HCYgN4+KU4wtiPwgdg8HbJOpgzBRUdSpTvtGcmveGmgnDiAW9LIKc9yxZrsXEOrz7XO7JWDJ8NHskol49GQQ8B3vMCsB218hzNp7qzitMkZLe3Ama8vKT9Jtpwo1WArXdBh67zagjLYGdwIHrspyCdFyBs8OATYFiFjp54xpyNo6m7I/XjmEdVt378mHFvjo4ECoicZ7T/tU0JdWvP8CiqQY5bKrhz5kk8fy2rT4UsFojnG4eN8+Y3MVPxmyUmuiingAUwJjf/6F7CKpPLgjtIuO4Kc6jVGokZzIVgJgSzuMun8KxdqFGrJdgDYCzI0wW0xD5x4Zh6jOa04RPrUsr7PBBFChJreZXsJToWCFiYIG/bP6Z8lxxVTmWOQSGuYwUKMn8OMst5hawmgeRjLoy36tosHXdhEN4TEbBxt3gozj0hiv0WVeu2UTNbw5ZvCaTTX5GZ90BlIWEA7FAnJUJi2M29mqr4nBQMnAhntnc+4mVsI0Zr4xWRZUC/kxWIcdlpSeA1yEIZhWchpfzbWJ1FkXwgXa3x60MMnpRc2zrNdpca9b0/um6MABiCtTiKJZF7N8f3xW4s0z/FNMn9QYTdpPKdRIfADeYzk5JiOWzXTHi51nTYlbZw3jV15QVmeEW9D5ax1ttMKPGPCh34bT1+epGXIUR/eArbtBr+iPyEKghUB4XAywLaBJZH6wn49tvP8Ln5/kRMIAglYRnNMm22uh3ubsgbqE4exwezsm57/3Viksamg4P/rovi355Q0zm9xtaknu1Ng7MCsdDorEkeOe0JcQiuQvOOTFo6n/SYTxqlm8h2RH+2VWpIbFfQ6sB6ZrKLXtH6dDXKUoQC2nu9Dgw30Yri1b5o8Hquzq1bt+QAYtJqNcC3aN2jQm6xxNt9VWAt2iEjnkXjc7Z+L3vYzuxVu8juyzYYbi7RapN9yz8cZZ0+reo0cD1j3fUVfFxudZ1Hcf8d2yFRLGPgj64T5L5X8Ig6PacnhZk8tMWr/Vvt/jlrZ/VuoXE+24lpwiChiSwF6sKt3GXPmp+B60/ib1BSSx/sxPfrKqswFEjut/JvGc8KRpcyf/rkOJds/xxKbr+/vz/9UcT3ROZoT31k2+otKtHwEi6voypTIw7sEAA1ttj8u9UA5pAEeOBKdFv8Ikv82sy+fTq65nf6+mKDVUt0nbgygE24omV/AUUYHlTbeIMGenuJ4JKKT0cYGYItBPtYKKQoKxs3M+0J2hrn/Z5CfZJgJ2pUYu85XQ36K08H6VzG277XCgAQFEmqOdSpZ73qZwwZdeaHrXEFY88Udi5T4MUiCap7DFkEhs+vkcnNEM8rEIiujBdZ0seugcz7a2XsiYSZae/a0Qs0UWXyDFZSrHjApbuYeZiO4aJ352X0mf+uFY6O0t4D++0v0tCp4zj4Yx8uogkBeJ+9X9cIy9FVcrNgUYvh/adQux0khVDIbC5QKgVShkRQdWbFONOaA7uQtwICR5/ARvsxYXmNfuS5pHn6HOvl53eSlQH67+dD322g136jwxcpzuF9JoFh9szh2nK73E8DvDOO2oL7yEXrxUttpQyVLmZ45kUTo7tb71pI+vJL0vtM28Qo7n25doO1b941a0TMiTYyfEDPYzejJ2XLkInqeFSeLEM55m+oA/oDYvl+pl0mN8nhoV7ech/mKvlT1nKr/wqbc2q/zqf6BMb0+dUOwxphazZoE2ccpeAAA=" alt="Tikka">
+        <h3>French Fries</h3>
+        <p>Golden, crispy fries.</p>
+        <p class="price">₹70</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="data:image/webp;base64,UklGRoYiAABXRUJQVlA4IHoiAAAwfwCdASriALUAPp0+l0gloyKjsFm7uLATiWZswYAFEkt64Wa31o6SzM9nfzHlefB98L/oesPb7eaL+b/9P1m/UB/mfSA6o/emP77QMukX6jK68JNSPwrzo/4Pfz869Qh8faI+3+Yn+Z5u+IF5cf9Lw9PWvYG/ov+n9Yf/Z8fv7N/wvYN8t3//+5b92v//7sP7Xte8CY/e8xPWhcL/J0U1J9lRc8RIqKvGcwSMM4JMnn4iiDDWhGvoieVVb+IXifoT3sMJUzJ4zl9MQQL7IiTY1DhNkKP0DAJ4tvapuX2dHGOcw3gnngyQVMm/tejqHWiaqYvcX0kjndi0f4gp7XlwvcbXMnl+eDSl80ZQuq0sgDTtZMajQmZNnT3zaWlojljY31nkTVBh5R8u8N8P0TL8vDWCD7PkoPBlsZNuLj3G3tgHMiYcPOxBCFvD6C8f2MZyKij5QqALDAv/WSO/o5AmlaZnbpXoWtEmpK3ojEYue6FHhOGlgW37jJiVH2AUMBXjqfqzFNZlunMEJMj9uRdenc9B8zdlgfHeV/A7BHb6I/CahhxdWjQ7cI1oq2ZottmlHKSDTabZ482QuMgpN1ZoOndwVCR78jh5rZ7GA0BBlHOaU7qFv4K/o6h+7n/maBHmo/w6Az/VsWz41fcrGEV61aHXd/WHYXPh2B6/VUE1yco1w08FcyBAgd2rmerQx+H0QUYRQLxDipg3BgrQvoskd7vRVz7h2q9QvgASBZZt2PQRURxFWthjHi610FNzblXThlL12E6T+0roCmSRYEpQQG6q9wSlI08mffNp/dhmEzoZyL5hYqiNt8gnyBSPaTdXh34BdrytoXDik7BeoiCooI2h/HI56LbgreKf/EQOez6XEy5RL03Qqu47wD1yhuZaeJ4ueIJAfBdy1GLZnPJizufWS37REHh/qPKer5e9ngvuwx415I/4wVCuGH51qBgbhh9sv3BbCT1VoBX3VdJBx99aHTtyrzpjsrRewLIJ7ObBKv4U0r4kGzUBSOBFfLX4WMpj33l3G5mrqut+bxEJalB0nDi+xP2SD9uuuRu3fiAHGnjoMNezja5q+Cit+WZiqrmWajERmxZBu6bR4vcNWz6OPa1xpNr2w9fe/XP1Td5V0tyafbTpcj7y9ps275YwSUvmHuInG69JXcZbTc07BYFkEsdqwNWYUZmPgAynqq6StB77hnMLLwJGP++eKhZYZJYu7CUGzSW9Ej2k+0B/HipX4OvAfCnY/uAHuEULkQfdNVIVFONNOGiITXveLAyb58CC+JCS+h93kVeoP+9wzrCYSBDveGH2qEyVqXu1fa1mTnzk2Sc0f8+pvnUdT594bRZL9DzVKnAmSH3E/SZRhoAA/v7Y273AJyuIh7QICVOvMttCh+KFIbH9ok6tE8Q8ytRzUamjUzg5hPjZOUBGunG41KWhJldxhUtyYAED+Qp4CJ2jEwx3XnN4cPgjms5rZ+j3brZWnb6plATvKj3y8xaIBK2+5xbQCWucuCyC/BRFUQrPyTcdfN7qREDIZtbSe3eiGHzMcE5yuHr2t2Sw4krYzud1PTuGyckaItkplCV7e8NcJ2uorshLecCEIQ7Xjl/GFt5y7Kqh63/qkjSdKQ1Jqwuk5wwU/gnkI8gSLDhDXRprHK48IvCzxosOvQbv1CqIzOES2JNlqLLV3/C9C0UISbs7drWRzKUu0bPcFD7Mn+WKb33R6yUkONjLKS76OcpXVXGW4EX7Lz7RVb2p5/+QCUcQNQgn1bdtrdCF/AvPnw5DoHIcggEXzm+eu/kkT/jdEzoLr+jUIlAqp4xfE3s4FjgsXXZFMCCVxf6vD9ffLLxyg14rE114slYBL1NwjQ4YcmQA7yI9ja8jZMQJ61tmUwKQlgELXCjR/A+dbSM/vZ8Nvww0MuEpyOARl8gs2v59NrPI0XXAqFWA4RpALHPUASepmfChgk2oXLYq+YR6DYjBKrL/lTjAuOmOUZVUKPDjzDbJUMVl0i67dnL/AtXubGyBHt4VG/MBqTGVlXJa1Rdjol66CivNpRpnNClQoBIQox5hGeUDgEYfs0cU6ApjzAIodawj+dfDETu7fPpMV08p2uVDW1gyisHYVzJPTW8a926+janGFqjc+jdzBi8/11Hj0LQLJWVOAns03YDxKkRuPZZQJ9FeI/1Z1+/jjE4tVDJ3vbUz7Ww96N1ZG1J4PKMNMp9YxtKY/QQ5vOT5xlF1KPp1IxKWV//ssA3gUtXgaXwJhPhl2kb8Ku5zulklChTl7nWf24XtRsyu1AFct9InzfDkteRlpArE+/X8eBpP3yIMxIwDWP8Pc/+aorP1Av3iIt89J4FPGKQL0/b1f7VeuLBoWTQS+Tt45JXdSpnAx8pQyT9fdY/BjdFTlh6EePVwtOWTTWlGWCr2Bj28MwS3iZyct+WIQsb7SEbSI5HXDlAZ+ujXRTiAig+ISMLOwvXLG3qdugcwZv15pM89CIRucSXJDKe/pUEusoQ5HUWohFDHOkkWfrmwKZmO9RHwoYIK6YUb/DgemP2FxTkfcVdgWiXhKpHnTBo6C2WqmF3EbNpT41evJaBp1LTDbHeJiIZ7RJ7OsvGLhOtttYI3BBdb6fEfSpBwGf5RB/i/wp1aiZnibyp4axZfcGfHv1j8IvtxASyrk20D0c2/7w7nV3kuyGLu44BWYj0Lb/AsIxUcp3cAATjsT5Dcx3WmG5CjRsFZCSedNcqgaYKd90JNhWIeZVf5MdFadVzYS4WE6VaotVA76BYIpcpm+Zp/LqfNamWqH/jWwKXnaJUfNL7SHH8LdlPkBbtiP39Ob0VkFG6vdVBCQKgWioGqXCACBVGQS15S6ihyBr8uf1zyDFcdo9bXbTVTRfRfqcZsecjq7AFwgRaOsJBCk0jAJYQgaKg7BiFiHgBnF7By0rAEeAdVXPb7B+bJTYcIb21mmOs+grT75+R7RRjnEo9177nYtvMiek3z1QcmQQK7EgZeNHgNfZsDqCWs9e7WyTGStOq8BWiA5EyZg8Y1Zd5cBk+Sw7HvLcIiPXyBrYCfB2xK6jBk0mEWSv5eS3G5mcztHhWEtSv1v0EppEqmH9DJVAL5gg+u4AW7u2kmmLoAv2EuBxVLH5O3S8Bwe1rIwbnNgVUFAjJlNgByDG3bPIFBMqP5sq2VjFTDmSHYA9y9E8+cVc8GVJG2hsgDuB3JLc/uAYaCTKOMSOD24B/NuNhwkSiD8VHy+fcsoTLanROEquxvnqvTPEI7U5uRmtOkht4ragfOnb9kdLcowYTRqXs6JXeRH6csfzIkL7YAq5iik0fbxGZvFFKzUOpqIap27afiTXx+WefMwLS5LARzzSP7nNQBIaGDScRNpxrz/diH4Fi7+WEAto4K3LAQy312Stmf++y8tEyVk5PZX8IJPRXeBVVC0K22jcjNFqD1nxjVQszKE2PbcN0CnmHVVfAVMUwYT4U8+NHqricDWgHIDCX3aOKByX+wyySAAlnMCHDNmMAJL7heOiNbMymg2RuPNyudPEQ9NvXzk1jdKgF84CNJxI2UTfdtryAGpHdcLZy1zBqxnatE2nR6Pu9RBxaBoMWn/hRAEl7JDUC9wy29t+58X4LD6PC1ODCVUyLB0wFz4inv0lnt+TrUcZNIh0G3AQ9CpaPcBuvdgVDdgiuj8uc9A5Epw6fyQ3sak4TCQDZANBIj9wQDjidtJueKrAn5kFkrnXePcFvSL+vlsSoJaVkMRzRawQ8QcfaS+7CT8+g+DYciW8UpYnKwc0Rt2NPWzKUSw5qL2nnsN32sZWVst2/b4gVUvG9XleyQOTFIzCJ/ot57Gy8VL0FTmu2/9EHf9rNh29P6iumxZ1fTZbDMkLqsSFqxNFK6fT57OgeDeIwTYrJ0e8CPdIZAHaPTHQ9kOC4b5lLtv7IYBTLk0KvEC7ytGAyqAGAN+szeBaNsUCh0WJiXPiR8wrZeF2FZFgLOCyh2ykKtikTzdolkHQVaREvfBSgWWtlR56RPjdlhJtncu+4XtDplG9y6o+uuWZst7YEKayP6aDnD9qsI7AloxQ4viZ0lNIY/oASIVfprDGmxJYesb+AsoFN5biGfh2HZ9aBYdHwU55sx9yTOWKQOctN0xN9f5wbaVbEhoXXikrui/4OVdphZIWWO4ht/cGYFLR0bBuSW0iey50oLj0CaP6g2x9YhqKEIHv9NYwUdlZ/vmIY47mM71sHBD1wfHrvu5z9G+GxkXmmnjEoY0MAS1EtMaur+D3bBaEzZDAFylknxQvqYj056BdLq6bq9bxCrk8J6v+Kce/lmOYEZtzPE1BZH1oFWMcLy1vr3zHnMdMG7peKrHBBb1Q4d5xGJv4BFfTIIAF88rc9y3QIv4pF53w7954vKI3XMf7n4Iea1Nv2+IoMb63wjndXub342WsTj+K+QJScRPC0FHXpn8WYZmPOu2Se7qosOp3OLHt+GU5FNk63u4gZRwQGhSBu/cVab5ZBdnlO+wkPg/CXDXJM/MLr1XnSKSBBO2lDgY85R/dS5xMTNrgFv4s5jNTdGtguGa95WcoO89QqWJA7bLXtLcmYFgMz2MuRSMxQ0nzSFnWhmO8h8K/jN5icDdDb8stfLhROePtWA/GRvvGA0f00BQatwlnDOfMj60iDDHRYjBxpd9xSkssfleGgcUY9/SM3LybyICYNwfP1wvuLI/9iUPva8LToaV00bEPsF1mDWrJJ2nbAWOU6eufI9N2npJ44GQ3EcAfuzE9cBNl5Ws62ZYXo+RRnqZ2u0F4HaKPYidQMn7thyUYU4miYl6W8YesewZHc377ZMs+9/HTQK2JvK1LOPexxc5W7DbV0/6KsddRzBSgfy2eGnGp9/jH49m1eT47i3T8V3xxW+UUMGGY1rR157wUfmnwXbftAOue/9RBjufXiyEqGtoR9AfFUiCpeoac2fqd/Gr6ac+Vk1a0YovRUBeTVppQEyhAo9K9DsZd6AwGI90fO7qYstonNtCOp1sL0XL3OrUAfT0M85OaBvStVE3wdTPNCnK1O4WJZ+7atUao0TvADI0zCnwsHdF8vF3gjZVdBObhP31GcoDVcevDDoXTTeIqZmjQW6tL9mJsSOF4lTIvcdfHDPS8URHmVh4LzIWOYd/ZqlKutsHlTkxZewRd+Z5vBlzGqloZilPiecYCPhz/XIP33jUg0lSn6BGxNdyMmp/H78LIWGbFoKkyexasU9HyEjlZiEp7dW7TX13PRuk82+VkSxRcT3AaN9GYhhEvOkrK0Q3CD35a1GJKdj2TTWQ5IrR3QZMncLG77GgQA4sRqS4ecY1GNk/fWE35taIEgX0Qg97IU+B9x3mrX18UtNnsAwjZiPKYd5mLt19wZIxi4bxLwwj77zNUnA0rCILa2tYYGtO0djl1FrmNtnZEWcFyhf34ngKixpoICglQn31HppTNQ5v9POi1pqgzAkdrBqkGL0rD/KEvJ40FAjSF10VZyw5nB9jX38b7kNv61/S1zLfJVmVdT9t0sukbe2VvpD3dZJRjzAlXrmwPW1ISW6us7/UK2TnM4LdzkVm1pOKha58RJ7e3bdUjcrrHF0diURqXaT6KiXzcU60e2GKEzRfSd/LyG+nFGDrvk1C/4P04k4NvL9B9PDuQohraDPHlEXGxwzyJAPrMQeZeMUvsiEjYIROecc5Fvdln79Y3pcCNn0b1QSkr0JBRAXzVi14Q1dNH9i7aLZtaIn4Z1zvFExpiyXcUG7+AU8267EO6siS1Sc0zdVKsq6kt1XLrp7GPMvs66ObG+JpdJTb2zXtG8V/0ZZXyxbDBfbQwCTcXGLHkJYZZPCYS6P3uMID/55CrYIwlfFEJR+0teVyZ51HBBVlhmw5gdgYFZnUy3KSPtQ0zJcCPVKVIelNuM4EBSygEPPTV+2jE6p4Ng/+8tpkWNgWY/mxEtuwMQ+x8c4z3My0o6hGAt7Y64CCzjDRbhAgiAODEo4ZUTvJHPncrd2avSFV1eHYxWOx9k5sR/Qr3FasKAhsd0TM62uDATtC97Ft/iOM7oCpBJbxck03VTtUGuDVjDvUPhtv4JDcdHYFxAOJVB7jLO7uhBY7uaiupUhyDwXff0G5iVrFRJXVyXqAQ00eMYTu2Z3CD6qfhhnCP9xx86c6gDHnYHY4x/CD0p4sz4T1ifUkR0n7gAqKZrPH+lZBuxMtb+XLknVEppsh9mkQ1qhouAoQE1TR4QrDl5VukJKQBwJBciMG2yhq4dcJ28LW7NEHsVYU560+KxLyBvGgBgvu451C7nb8q/Qxz6uPOvFpDcGa88xRKt0yQWNaIqy3nARH7ztMcz5BCP9MAZ3D+hTZT0Tm1icMHMjas1bEa+dI4+9RjsWkZqLdXu9DiE3Ki0lqWglN6T4PKUew7ypmwToZZc84ny1WOgiDkLlCI/dyBcETaQDswduF4TAeIdRoWDl4r1xpYLrsYUxwm6GaI75zeTvPYFuX9bdLe5ejJtz7XloTY3bot4UCqMbEz/2zJb40vLkiXwjCEIWFcoa+wM5yCuEbA26qGPzi1nsYNiija2pA6js17dBmWwABTp/ufzEFw2dqN/qIP2ORM2MkO7+NV9jBFEBWqs59rwsK8hM14KzDfsY88mtMTOjOsmePVr9b4wZFVUWIuYqRIUdqlEfUssSBy6kT+NZPigj+i7KKJ3K07n2NPx0hKYdnR4VTXMl6WzY9BMoO3IcN0jI7aUKtXULI5+80CnYNFlz8cuBktkzm6Km3ibxpYgFLW3VWJQmMlGH2l8WBb8Xr9r9vwAOkfXkMj7miKJfZIrTOYb4x9sbVEXrEfXG9lvbhMgyHgY/63V7WEJVIYbyZHdrKodQsRHRvTUt2BZc0mtseVWIZbha2ToygqPK3gPQObX8dh9+3NCeS1ULYnyd2jXcYQ2B6U+xiTAMJGEZsQXbBSF2aYWstiEdjE1oyqDmYT43tkySj+t9eSdEAXIKdX16RE/y1F2dRlM5fT8VWcrYGlkr3Z/6zd6RNqkU5WjeQwSt9TZ97sgI5A455IeiopNmlnWcOVmtecw9eMTO1h06L03mxxY0yvYVmU7+WQa9gaqcS+TOSEj1a6HvIm56X1Po/Zkd4HljrtFweoL1UgRdA3+NHaM08PaMSh1XdoY27U5zbcjgIx/HxeqRzEljJZmbETlKk0fo8JaKYDfWtPWiWrnXILC06GmOixxmk44w3NadRQXyuVqrqLB+FzVaI5AfTNeSSK4xce+EkAgYekHU76pQvupg9WDbw/6VMtVR4Lh1guu7HWihboGYT3YUtRUrs4r6mGKXoLW7elNPCyJKjK+w/XIRPxscya+d1nVic/l3jD3xvxfEx2etskc5V3homL66JCN2NteyJg/O4JhcNG9fK43rgzbLKbSmrzZMmMFxTsI7G8649Kp8rmGZ+9NBDnIAWmA9UpKZ3GbG4f9l9Gmhjo8plIjI3fwbO4y0GI8ZiAxMAWQ4XREqUDyP30SI31cRf7awaDNz4VeX9XvmPcOzZJOS6f/JO7xwCIuMmsD9ruw8PESjNh0anntngf5TvHML82kZaKgIUizbIbiQfLhKDDqUUTmOoaHTZYOKznnILAULJUas2+g+6kRLFraGTuJYlaN3R6nFwMoOXh01s7ceYeBgtl5dswaTl0xYJg/F/oQdqwiF19+Mb5EwrMq7wn4oL4jRK8ktn/ChdQubCMp5z07Gpo2WMI9bU9dqHo3eCeVH09fEzHSDulxSfxxigMlJxWkT1dlzBgdMvC5hP57mpusqNE4QrLV54Bw5eYjnYMCSCe7/pRtYfhUQM32e0z+qeFE8J12e6M+or/pDxT3vqBPIv8BFVn4yWU9ZkClfpnEYBdXT5e95nGhByosjLvo3UOi7Qr4xsOEZMuA3LSFjo18sB8QQT3eeZBEn2Zw2v+qLswXcqQOieiUkhBKUAEEub5QdTtpGhbnUjyg0fTzfdhlNDa5bxvQe5mt6mjeK97tIelSUCuqAeI/4w6PRPtHHkjHs/9uqHBt3KPAlrbu/jxoI9lfUd37052vuw4z4L/IIMkXutr70cm3xg8MOmh31ZIrP0INPctP3eOmVT6YxU9gXI1JTFJAzh2ijy/X+xsjV4gg1HWFfebjHDhGrCFeHnJwMdIvNBJgPrPnZsnwEdAaGizKoCt0+OVpm/SSya0mvyFmH6wIFnt82ER611kaE6NRv0+CmRe9JCb6Tp2g4ZkogPD7D5jb0mmjy5c4qPComA91ScxawxsrdjxZY9BxlChkhno9We38MC5+DTEAfmSABCqi5LCrrceo34FWU9duASFXLC4ujsnulHAbUosWI0iXZZi0YAaDo9jGCbgbBJgJNVimb9nKhwq5UdRblDja7nGteTBJCj1RBfkDJIjNeGeWsE65aJikhOvB8ryYINLBeZWq0ktYPXEPp3JhDptoyyZyIi4dbPyAfcL/Ih4HzMygmY3oP4ZR0fUW4FHh+Nl/ugGjD9S6UmksyxzvL/50tNVUOB0JYRxKB06Rv2S/LZo/9IPrkhimXN0zcj0hb8Q7VABL+Moy8veUmxjdwRvHB0Kz8WmY8Yj3R+a3F2sd3vHfSn689KYsedv8CPHZRn+YF/BhJx4QnKchBeicUwYeXEgoAJTDHOyqXhYJaFVmVYG5jMlfKXOdn7FdoYWm+Mv+0rzeiJ/ED1b6zAmBg9xaxbIu7GdoIQ3Jgy/h45C4EO8qC/3c51x1VZxo9c0q2C3AKOD49lKuwPnOTdpCFzBLn/bp6nIah+6oMSepmcuCALXgFq6EirO7scs9BIwGATK5IZF0I1FBFVE1+93heO2ZiiAdclBoJ91hDyo1I8AUM4tsDlFymw2HABWSvnvHR3cvoZaQpM5fodkZobtzLJFX1/fZ9LJ83w/XC/nuvAQso/IX4dq3wzjqSSi4sY8plR+/kOGusb9buVhG4E/noHjVq2O7n444iZad/ZQrHwJababPb2LN5gIuQd+MRBUQLxn4vwu+ZFcWwoJHc0AK3Edv1wAYl6bMEUXw5gtOoNhDRcEHy/EHtR/PRGtepNY6aWpM/DwgekoGsyBZbU+cnMdRmWyxtUtuCmedr5S8EyBFuvNb7l1egzcmDq50O/pG/gPRlIdj09EEyh2h8b5W6xjsiScheWdVsfwterVe/lCqJ5gyvS6ORz0h3wqE+HEwuBTR0Bgie2Rc7vsbsQ0b9R8pKYbRm9DCysL6jk8wQUZbultt9uR6zZmpm1tGwZxec7WA4GBuzk5hAaWIMQtBKes7ThpArGpJK94F0Sogc+9t8kR8M3C3uA6hs/YGvjXlXdyk5yIvcOFwUaYSNHFyEbHwbTKi8Sv42e9DdYf0YZrMMzcoCCVgWko/KKhpuO11GF/Ob6xVkXuE0jEfoi72pv+VSgv3a0DSOrUOzStbOJGFdaQpv0CP55M74rkXPi+LISim4RbgD5akGG7x+GKuk5dYDCIrrFIa6yS2vS8rAomcLl6Dv7yaBSU6fFkTacsJRlCPCyhuBsYeKaRJQuzN3WtpWSshK4rGa9hu3cMVAxstZkqBhZSr+DVHfRmU/tPDGU1E5omIdpTDG0WSnHHgLtu1GkaXamhQqlrNHTI8h11W6RST3N5DPFJ5+G2C1daQFxcbeD7yVH+6bRRYDTkHgpUmPbyWmrvHqUbEk2OeS1GW3WDdLi9irLLrKjk/hZ7kxYO3JDbqzXgdkVz8GPIEhuqQ0bMMg6khjC3zL9lg64Ja8ojPin6yYiNKP0XIpNfD8pKlbzU9G8rL8yb3OdXM3V0XvEJhv6MJVx7Iz6sTxXeDGwrTr0JshR5YDoBM0DQWXZzmZ/hz76LecE0oe+lOXhw1LLj7yG1vk4Zft7l76gQy2TkkhrH8vjwDlpZHfqCLEO9H4oxlVNRiDH3ICXKcr7VeAO0OG6liewd+aB5e6vH3+0/ce1tlGThieuRucpdPRVAC5H0gCihTGVbR5cAcPjo9GSMNtPhwk0bmWDazHu1apUuoxeNsMJ8la8ka/66awsBnhrJ9A4EwGRsFFVX7Yisv47NG3NuJMJFUREziYFvVs8j8PZQ0eyySfAlgmAzJjrPdxTL21mMqbXt91woXFVOy2/TqwXQMgcROzmgC+0dxeb41wBakq6/ef/BDIGCsm5TgsCB+Ek3I5NRJ8pdJqUSZVxCNuAfGaPtgwBlyzVymHq+7dQ7dM9sUdbOL248BdK17BrkrJpQ9Y0iucvkx3sjHGJjwXQg0Q95aBtr225VMJq1dKzx8AvIHX/qCh0MAEpt8udhvC2tr/Uygzu4OoCrgAQZKJtVwFdCe5bRG/c5WKmQxFnOd/patWLVkgWYsSsg2kgorpPxbAi2Y6xsf6QZtVx2gFXhjlPD977SpTnRJicYJKVKvAHJSdx3++zGXO7hLmh6t8zkQyI5ajFtbuF8rw7xI0kzUyYtzz7iaYsg8XRTaS16gZRfFEgeGkAP9Y/V2sDL4vTwQKUPJfPaVwxKqPG5mLe6HnTnPla1UCymAHGJjLm8wNjMeyh3R9fhSl63zxkEIhzSucBZHj4p8Gi5U5MKOInVa/+v1HbRRxVv00X5nidQWvSEX1iMecYyeaHl/wP1VX8XHgtxRqatAeGSqP/fE+3plR2zz9dr8SXFNwbT+D/hCeQXQAoMmZFbE73HW5FH+cKweZfZEd1fBX6l/9zmTT0/M3CYMPJYg+P7n9cvLOX/5F0Q9jkAAXnVq2XzSsezQIjOwHmJ+IjSvHHws/aX1sGRfB1kCAvL5DoMWnJuFmEwQG7/DY8DH4gZeBzRJlnIBZ8CDQyewMBPQXOyl6XcqgH4Q6MN4ziyr1ZhXohmU3xL0S6ZuXDNJKeKfKEHq+sQDCpFxbGDlxcdUek2sK0wCdvGCnjWt0+HxvF8EW2NecCd3Gp2i3eTiylLVCaLA12tyxMv5u5/ImhfXlNF0sObmy1QAhtYs8bM6qMJf66NLxKOZxDQCSrx2zpV9nIEv4GkxC+huQDlIy5gKW+o/8BxEG7bz8PQcm6qT1DKmSzIsekq9ifKC1o1HtRH8TuZ6atqdvEYFKn8bz6//Vd6YOwYETFy5G1YsLYwBl6LwnB6oTf+gGp51MFgavaEVWx+MjG+9dEbOBTFb1w4ptGpbT42vA+FIEJlebxE3/IxxW/nZCQbxEy3yOMA2r01gTEmNT2SMWOlUuJhcUde9e4g6vI3ECZZieDjZgAusaXDNNlWanzgIJ3FbcLwplBl/j+9+EOktkzqLf20epy0UFATl7hXJAZ86c2bkHJDOGotUSXT0jbIdJSHoF04U7XgMImnl3bUPstYcPgvypXKZOB1rKnDzZDfkYx5/ThBg4ycOl7iwmddIXqSIpkHlcGm+Iv+DDgVSRpMY2R+WlbbqKy8+eksm0wgGxaehlN2DAWPfJe1+yydFEZ18VswwUM2KcuAFHjYQ7RhLfnuGGwyb2o/RuiPET9pxxqs3i//k632WosZrRJFjtA7/fHLYbtV2Tk/fYVhB0RSRtqtu/Jf+sWD2MqjlYfijQWPb8s+//V70it4bQG6keh6jBaUtA/paokH0j78KWxrG5a/OjqbSvtx3M9H6A8Lo9wuRySaAug+vuJDCGCh54M2EMsNuV8PN7VwY5Hlw4jmB+YxZwGLAyxrIO+v7gmyoMxdsrO5MguN0rExN9aE5WRfmE+9oM9cRAWP1k1mFVgFxlQ7auAIVvWs98sSQENWvIRdC/joDXSnzfFuc+FCmTxFR29YAG8/hv90YqneDU6/m0sE8xa/IRhpXn7PcgVsA+moZrkLi/es6RgtS0z5YAAAA=" alt="Tikka">
+        <h3>Chicken Burger</h3>
+        <p>Spicy grilled chicken burger.</p>
+        <p class="price">₹210</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza-1080x1080.jpg" alt="Tikka">
+        <h3>Margherita Pizza</h3>
+        <p>Classic tomato & cheese pizza.</p>
+       <p class="price">₹220</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://i.pinimg.com/originals/ba/7d/42/ba7d42927ff052586bfe816c4d58a3eb.jpg" alt="Tikka">
+        <h3>Cheese Burst Pizza</h3>
+        <p>Stuffed crust with cheese.</p>
+       <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://www.aspicyperspective.com/wp-content/uploads/2014/12/Fettuccine-Alfredo-Recipe-16.jpg" alt="Tikka">
+        <h3>Pasta Alfredo</h3>
+        <p>Creamy white sauce pasta.</p>
+       <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://mealprepmanual.com/wp-content/uploads/2024/01/Big-Boy-Mac-Cheese-1-807x1024.jpg" alt="Tikka">
+        <h3>Mac n Cheese</h3>
+        <p>Baked pasta in cheese sauce.</p>
+       <p class="price">₹80</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.B32bansRI7RS3yfbUSEBNwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tikka">
+        <h3>Gulab Jamun</h3>
+        <p>Syrupy milk dumplings.</p>
+       <p class="price">₹110</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/1x1/1x1-how-to-make-sponge-rasgulla-video-recipe.jpg" alt="Tikka">
+        <h3>Rasgulla</h3>
+        <p>Soft spongy Bengali sweet.</p>
+       <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.tCxkoTJ9bcbBQzOnpn6xrgHaJQ?w=819&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tikka">
+        <h3>Ice Cream Sundae</h3>
+        <p>Ice cream with toppings.</p>
+       <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.a615Ak1NfAypUMcoT4tejgHaF1?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tikka">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Molten chocolate center cake.</p>
+       <p class="price">₹260</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://www.sugarspicenmore.com/wp-content/uploads/2022/04/Jalebi.jpg" alt="Tikka">
+        <h3>Jalebi</h3>
+        <p>Sweet fried spirals.</p>
+       <p class="price">₹90</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/08/quinoa-salad.jpg" alt="Tikka">
+        <h3>Quinoa Salad</h3>
+        <p>Veggies + quinoa in olive oi.</p>
+       <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+        <img src="https://i0.wp.com/fountainavenuekitchen.com/wp-content/uploads/2023/06/2023_0306_FAK_BBQ_Tofu_032.jpg?fit=2000%2C1333&ssl=1" alt="Tikka">
+        <h3>Grilled Tofu Bowl</h3>
+        <p>Tofu with stir-fried veggies.</p>
+       <p class="price">₹220</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+             <div class="menu-item">
+        <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2017/06/Fresh-Fruit-Bowl-1.jpg" alt="Tikka">
+        <h3>Fruit Bowl</h3>
+        <p>Seasonal fruits mix.</p>
+       <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+             <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.-UO1Xhka7xY_ECsF6wERSwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tikka">
+        <h3>Veg Wrap</h3>
+        <p>Healthy roll with paneer or tofu.</p>
+       <p class="price">₹260</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+             <div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.o7Dk_IeVEunD1bO8RCYiowHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tikka">
+        <h3>Smoothie</h3>
+        <p>Mango/Berry/Avocado smoothies.</p>
+       <p class="price">₹280</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+      </div>
+       <div class="menu-item">
+      <img src="https://genv.org/wp-content/uploads/2023/02/17-Vegetable-Biryani.jpg" alt="Veg Biryani">
+      <h3>Veg Biryani</h3>
+      <p>Fragrant rice cooked with fresh vegetables and spices.</p>
+      <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.k4xC3lQs22-ibkUtKVCYVAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chicken Biryani">
+      <h3>Chicken Biryani</h3>
+      <p>Classic Hyderabadi chicken biryani with long grain rice.</p>
+      <p class="price">₹220</p>
+       <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/mutton-hyderabadi-biryani-01-768x768.jpg" alt="Mutton Biryani">
+      <h3>Mutton Biryani</h3>
+      <p>Slow-cooked tender mutton layered with saffron rice.</p>
+       <p class="price">₹280</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.58qa0NfDfBzEppnQLKue3wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Egg Biryani">
+      <h3>Egg Biryani</h3>
+      <p>Boiled eggs tossed with biryani rice and mild spices.</p>
+      <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+<div class="menu-item">
+      <img src="https://www.foodfusion.com/wp-content/uploads/2021/02/Lucknowi-biryani-Recipe-by-Food-fusion-1.jpg?v=1612346444" alt=" Biryani">
+      <h3>Sindhi Biryani</h3>
+       <p class="price">₹220</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+<div class="menu-item">
+      <img src="https://cdn-brilio-net.akamaized.net/news/2020/08/04/189510/1282200-1000xauto-resep-nasi-kebuli.jpg" alt=" Biryani">
+      <h3>Nasi Kebuli Biryani</h3>
+       <p class="price">₹250</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://i.pinimg.com/originals/9f/72/ff/9f72ffa87bc4218dee5685a43c113f62.jpg" alt=" Biryani">
+      <h3>Tehari Biryani</h3>
+       <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://as1.ftcdn.net/v2/jpg/04/51/16/64/1000_F_451166450_ptaMRfy9nop3rq82IBYnAozMrdn1BeTA.jpg" alt=" Biryani">
+      <h3>Kachchi Biryani</h3>
+       <p class="price">₹200</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://theyummydelights.com/wp-content/uploads/2019/08/hyderabadi-biryani-recipe.jpg" alt=" Biryani">
+      <h3>Hyderabadi Pakki Biryani</h3>
+       <p class="price">₹250</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.yebdqKj73yc4-clcEoP6WQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt=" Biryani">
+      <h3>Calcutta Biryani</h3>
+       <p class="price">₹270</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://hungryforever.net/wp-content/uploads/2017/09/lucknowi-mutton-biryani-recipe.jpg" alt=" Biryani">
+      <h3>Lucknowi Biryani</h3>
+       <p class="price">₹260</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/R.2876c6919237276a6aa7aef96118221a?rik=V7QENtbv3xIQWw&riu=http%3a%2f%2fwww.recipesaresimple.com%2fwp-content%2fuploads%2f2015%2f06%2fmalabar-chicken-biryani-biriyani.jpg&ehk=cAq5M61%2bQ%2fAGJqAYjS8BfaeVufGvk%2fwNyJkxa2NLzug%3d&risl=&pid=ImgRaw&r=0" alt=" Biryani">
+      <h3>Malabar Biryani</h3>
+       <p class="price">₹250</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://lmbsweets.com/wp-content/uploads/2021/07/myghali-briyani-.jpg" alt=" Biryani">
+      <h3>Mughlai Biryani</h3>
+       <p class="price">₹210</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/OIP.UsLipPwyEzNPSzUyexJHWgHaHa?w=186&h=186&c=7&r=0&o=7&pid=1.7&rm=3" alt=" Biryani">
+      <h3>Ambur Biryani</h3>
+       <p class="price">₹210</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="data:image/webp;base64,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" alt=" Biryani">
+      <h3>Bhatkali Biryani</h3>
+       <p class="price">₹290</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://i.ytimg.com/vi/uPWD5elEMUw/maxresdefault.jpg" alt=" Biryani">
+      <h3>Kashmiri Biryani</h3>
+       <p class="price">₹250</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.hindustantimes.com/telugu/img/2023/01/31/960x540/Mangalorean_Beary_Biryani_1675173529575_1675173534949_1675173534949.jpg" alt=" Biryani">
+      <h3>Beary Biryani</h3>
+       <p class="price">₹220</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://www.namscorner.com/wp-content/uploads/2020/08/nattu_kozhi_biryani/117825213_339843667197936_1689320782186671552_n-768x576.jpg" alt=" Biryani">
+      <h3>Kozhi Biryani</h3>
+       <p class="price">₹240</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://overapintin.files.wordpress.com/2017/11/assam-biryani.jpg?w=750" alt=" Biryani" width="10%" heigth="10px">
+      <h3>Assamese Kampuri Biryani</h3>
+       <p class="price">₹250</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://www.bakespace.com/images/large/c779cbb0c534ee1dab89a350e833fca0.jpeg" alt=" Biryani">
+      <h3>Bombay Biryani</h3>
+       <p class="price">₹300</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/ac/a9/e1/good-biryani-recipe-menu.jpg" alt=" Biryani">
+      <h3>Dindigul Thalappakatti Biryani</h3>
+       <p class="price">₹290</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://www.shanfoods.com/wp-content/uploads/2016/11/memoni-biryani-banner.jpg" alt=" Biryani">
+      <h3>Memoni Biryani</h3>
+       <p class="price">₹240</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://i.ytimg.com/vi/BqfarlkdIK0/maxresdefault.jpg" alt=" Biryani">
+      <h3>Kalyani Biryani</h3>
+       <p class="price">₹210</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://i.pinimg.com/originals/f7/c5/a3/f7c5a3dbcf3f24453616e1fdf0e66aa8.jpg" alt=" Biryani">
+      <h3>Sri Lankan Biryani</h3>
+       <p class="price">₹230</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://iranontrip.com/wp-content/uploads/2017/10/Berian-Beryun-Biryani.jpg" alt=" Biryani">
+      <h3>Berian Biryani</h3>
+       <p class="price">₹270</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+    <div class="menu-item">
+      <img src="https://i.ytimg.com/vi/cgvqIl5GqEg/maxresdefault.jpg" alt=" Biryani">
+      <h3>Dan Pauk Biryani</h3>
+       <p class="price">₹240</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+     <div class="menu-item">
+      <img src="https://i.ytimg.com/vi/zDTDT0qMOVE/maxresdefault.jpg">
+      <h3>Middle Eastern Biryani</h3>
+       <p class="price">₹260</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+    </div>
+     <div class="menu-item">
+      <img src="https://purendesi.in/wp-content/uploads/2024/12/Afghani-Chicken-Biryani-Recipe.jpg" alt=" Biryani">
+      <h3>Afghani Biryani</h3>
+       <p class="price">₹220</p>
+        <a href="checkout.html" class="btn">Order Now</a>  
+    </div>
+      <div class="menu-item" data-name="Cheese Pizza">
+        <img src="https://www.cheesehouse.com/wp-content/uploads/2020/10/pizza-2.jpg" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>  
+        </div>
+      <div class="menu-item">
+        <img src="https://i0.wp.com/www.thecandidcooks.com/wp-content/uploads/2022/07/california-veggie-pizza-feature.jpg?fit=1920%2C1280&ssl=1" alt="Pizza">
+        <h3>California-style Pizza</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.pnLBBWs41Z1w-fxe8-LTVgHaFF?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Detroit-style Pizza</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.3d4d51011e9982c02eb3c6ed1a173b61?rik=kfjb30K6ZoL9rw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-SQ_Y4SswMJ4%2fVS72dd1ZC2I%2fAAAAAAAAGmM%2fm1ie2oNu2A8%2fs1600%2f139a.jpg&ehk=2DfSqVjveNBaloGZ3p5PIAdbluEQtsZ9EM0hYdn2KkU%3d&risl=&pid=ImgRaw&r=0" alt="Pizza">
+        <h3>Fugazza Pizza</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://www.allrecipes.com/thmb/v1Xi2wtebK1sZwSJitdV4MGKl1c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hawaiian-pizza-ddmfs-3x2-132-450eff04ad924d9a9eae98ca44e3f988.jpg" alt="Pizza">
+        <h3>Hawaiian Pizza</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.acqK3RPYfrkLeF8MyVrqqAHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Kebab Pizza</h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.1Xr2OkJdpGuaysQAOtn5YgHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Pizza Margherita</h3>
+        <p class="price">₹90</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://th.bing.com/th/id/OSK.HEROZsFKZGPPfOtNlNrvTwi1oIhWRykm7NvdpKRWLyC8IK0?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Neapolitan Pizza</h3>
+        <p class="price">₹100</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2024-05/New-Haven-Style-Pizza-10.jpg?itok=fGJnSb7_" alt="Pizza">
+        <h3>New Haven-style Pizza</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.x6GoRaDk3e_79fqpguTeWgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>New York-style Pizza</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pizza_Quattro_Stagioni.jpg/1200px-Pizza_Quattro_Stagioni.jpg" alt="Pizza">
+        <h3>Pizza quattro stagioni</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.zwiji4mAE_Rvlv9USI83XAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Roman Pizza</h3>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.6fDETrHBPstTg30NCbBcGwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Sicilian Pizza</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.tasteofhome.com/wp-content/uploads/2021/02/St-Louis-Style-Pizza_EXPS_FT20_258992_F_1217_1.jpg" alt="Pizza">
+        <h3>St.Louis-style Pizza</h3>
+        <p class="price">₹130</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://annainthekitchen.com/wp-content/uploads/2022/04/zapiekanki.jpg" alt="Pizza">
+        <h3>Zapiekanka</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.laurafuentes.com/wp-content/uploads/2019/04/greek_pizza_post_1.jpg" alt="Pizza">
+        <h3>Greek Pizza</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.3ZbeiKCXt9LsFjChUwXgoAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Bismark Pizza</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1JlWBu.img?w=768&h=431&m=6" alt="Pizza">
+        <h3>Brooklyn Style Pizza</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://d1w7312wesee68.cloudfront.net/vRily4LE4S6YW0Y7VMPr3CcoVZfbBczsv55ye93W8sk/resize:fit:1080:1080/plain/s3:/toasttab/restaurants/restaurant-278224000000000000/menu/images/item-62d098cf-31c8-4279-a969-9b3450798c9b.png" alt="Pizza">
+        <h3>Buffalo Style Pizza</h3>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.y8vI30zG-mXch_qiwpUnAAHaHa?w=267&h=200&c=8&rs=1&o=6&pid=23.1" alt="Pizza">
+        <h3>Caprese Pizza</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.LlqcAi8oI40-58Kwd_gKhQHaFj?w=200&h=200&c=12&rs=1&p=0&o=6&pid=23.1" alt="Pizza">
+        <h3>Carbonara Pizza</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://cdn.tasteatlas.com/images/dishes/eddbdc66e0f341c1970e8a323f0746bb.jpg?mw=1300" alt="Pizza">
+        <h3>Carrettiera Pizza</h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://roadfood.com/wp-content/uploads/2017/04/white-clam-e1528227984968-775x550.jpg">
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.DvQcgHS5LPqBiFB4Evm7LQHaLH?w=267&h=200&c=8&rs=1&o=6&pid=23.1" alt="Pizza">
+        <h3>Cuban Style Pizza</h3>
+        <p class="price">₹110</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.kJIKfigUu5FjNfUc3OhVwQHaE8?w=200&h=200&c=12&rs=1&p=0&o=6&pid=23.1" alt="Pizza">
+        <h3>Falafel Pizza</h3>
+        <p class="price">₹90</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.5ALsla7g7U2eiK6g1Ck7ugHaE8?w=160&h=108&c=7&bgcl=ddc325&r=0&o=6&pid=13.1" alt="Pizza">
+        <h3>Fiori di Zucca Pizza</h3>
+        <p class="price">₹100</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.D7YvFbSfWeQd8GtaPvid7AAAAA?w=267&h=200&c=8&rs=1&o=6&pid=23.1" alt="Pizza">
+        <h3>Gluten-Free Pizza</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.wy0DKO3BwBmOpv_fcyr4YAAAAA?w=267&h=200&c=8&rs=1&o=6&pid=23.1" alt="Pizza">
+        <h3>Lahmacun Pizza</h3>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.lcyn_g3n7sJmUsuPatL6DAHaF7?w=191&h=108&c=7&bgcl=f3025b&r=0&o=6&pid=13.1" alt="Pizza">
+        <h3>Meat Lovers' Pizza</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.2d41a71a60a35370de487fa9be164069?rik=4PjqsRmlpyrJ3g&riu=http%3a%2f%2fimg.delicious.com.au%2fa6_fDfcD%2fw1200%2fdel%2f2015%2f10%2fmoroccan-lamb-pizza-12001-1.jpg&ehk=I0V%2fMcKR8ZcFUfnS3ombJVCstslFjkeclX070%2bdVqzY%3d&risl=&pid=ImgRaw&r=0" alt="Pizza">
+        <h3>Moroccan Pizza</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.HdaJWkFBzTFPvcOIJZvkgAHaFj?w=298&h=222&c=10&rs=1&bgcl=fffffe&r=0&o=6&pid=23.1" alt="Pizza">
+        <h3>Pepperoni Pizza</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.WhUv4twu7-pMx_4MV7YC9wHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pizza">
+        <h3>Pugliese Pizza</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://comidasegipcias.com/wp-content/uploads/2019/10/sfiha-pizza-arabe.jpg" alt="Pizza">
+        <h3>Sfiha Pizza</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.XnRqxpsttDE17YIVyf5vPgHaDd?w=267&h=200&c=8&rs=1&o=6&pid=23.1" alt="Pizza">
+        <h3>Supreme Pizza</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.littlesugarsnaps.com/wp-content/uploads/2020/05/Sweet-Pizza-with-mascarpone-blackberry-3987.jpg" alt="Pizza">
+        <h3>Sweet Pizza</h3>
+        <p class="price">₹130</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.1cc41b17020a49b7b82419de6f91f952?rik=X8g8Brk3CFdpag&riu=http%3a%2f%2fccfoodtravel.com%2fwp-content%2fuploads%2f2014%2f01%2ftarte_flambe.jpg&ehk=pFYnjBeTudTuVmmz0yO7RLNTw5t3D1GXP9kJ5ECs7DI%3d&risl=&pid=ImgRaw&r=0" alt="Pizza">
+        <h3>Tarte Flambee Pizza</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.papajohns.com/static-assets/a/images/web/product/pizzas/the-works-slate-compressed.jpg" alt="Pizza">
+        <h3>The Works Pizza</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.6tWOdFvmeqej-ePWFTJrOAHaJ4?w=282&h=200&c=8&rs=1&o=6&pid=23.1" alt="Pizza">
+        <h3>Veggie Pizza</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.aberdeenskitchen.com/wp-content/uploads/2017/05/BBQ-Chicken-Pizza-9-680x1024.jpg" alt="Pizza">
+        <h3>chicken Pizza</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item" data-name="Cheese Pizza">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.j7ljUAYn_DJwvfgB7EqSEwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" >
+        <h3>Butter Chicken</h3>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>  
+        </div>
+      <div class="menu-item">
+        <img src="https://bing.com/th?id=OSK.261d83af68678d2331e1b4cb762f40e3">
+        <h3>Tandoori Chicken</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://silkroadrecipes.com/wp-content/uploads/2020/08/Chicken-Korma-3.jpg">
+        <h3>Chicken Korma</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.By5-UtbILcq9aK2tINjlMgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Dragon Chicken</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://feastwithsafiya.com/wp-content/uploads/2022/03/chicken-curry-recipe.jpg">
+        <h3>Chicken Curry</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://thebigmansworld.com/wp-content/uploads/2023/03/chicken-vindaloo-recipe-768x768.jpg">
+        <h3>Chicken Vindaloo</h3>
+        <p class="price">₹175</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://preview.redd.it/chicken-madras-curry-v0-gzl2z2ree7la1.jpg?auto=webp&s=f1452fb502d26e6f09d8ef53e2570a990e50ccb4">
+        <h3>Chicken Madras Curry</h3>
+        <p class="price">₹130</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.gwRAzZcZ36GgCZ4GindPwgHaDu?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Chicken Kathi Roll</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.-42ES6D2Sxvm9WWEMY3OMQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Garlic Chicken</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.KoZAKMbPQenQN732504HvgHaLF?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Instant Pot Tikka Masala Chicken</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.pavaniskitchen.com/wp-content/uploads/2020/10/chicken-roast2.jpg">
+        <h3>Dry Chicken Ghee Roast</h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.U_6fCszxBXM19aJRKa6pnwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Chicken Nuggets</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://spiceeats.com/wp-content/uploads/2020/01/Andhra-Chicken.jpg">
+        <h3>Andhra Chicken Curry</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://c.ndtvimg.com/2021-12/0qqp966g_chicken-majestic_625x300_01_December_21.jpg">
+        <h3>Chicken Majestic</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://vismaifood.com/storage/app/uploads/public/65b/760/990/thumb__700_0_0_0_auto.jpg">
+        <h3>Andhra Chilli Chicken</h3>
+        <p class="price">₹110</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://i0.wp.com/blendofspicesbysara.com/wp-content/uploads/2021/04/PXL_20210403_202602593.PORTRAIT-01.jpeg?w=800&ssl=1">
+        <h3>Reshmi Kabab Chicken</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.x2vg5HgA4Rl9W12EEh1w1wHaF6?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Chicken Burger</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.sWcc49IIZ9z7r6MXS3_vEAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Kerala Chicken Curry</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2016/02/chicken-fry-biryani-recipe-414x600.jpg">
+        <h3>Chicken Fry Biryani</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://wallpaperaccess.com/full/10583551.jpg">
+        <h3>Chicken Noodles</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.iT3DSTflYgXIJJz2xsnKlAHaJl?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Chicken Pasta</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://aromaticessence.co/wp-content/uploads/2023/11/chicken_keema_featured-1024x1024.jpg">
+        <h3>Chicken keema</h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://i.pinimg.com/originals/c6/a8/57/c6a85778c95328e85dc5767709e7b31b.jpg">
+        <h3>methi Chicken</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/chicken-lollipop-recipe.jpg">
+        <h3>Chicken Lollipop</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://natashaskitchen.com/wp-content/uploads/2020/09/Chicken-Cakes-Recipe-4-728x1092.jpg">
+        <h3>Chicken Patties</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/07/Chicken-Pulao-Thumbnail-1170x1170.jpg">
+        <h3>Chicken Pulao</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Pepper-Chicken-750x750.jpg">
+        <h3>Pepper Chicken</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://i.ytimg.com/vi/-lwHfv0iMgY/maxresdefault.jpg">
+        <h3>Chicken Fry</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://thumbs.dreamstime.com/z/tangdi-kabab-full-plate-delicious-melt-mouth-appetizer-prepared-soft-moist-chicken-marinated-aromatic-indian-spices-195566744.jpg">
+        <h3>Tangdi Kabab Chicken</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Popcorn-Chicken-750x750.jpg">
+        <h3>Popcorn Chicken</h3>
+        <p class="price">₹179</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://ministryofcurry.com/wp-content/uploads/2021/05/chicken-shawarma-6.jpg">
+        <h3>Chicken Shawarma</h3>
+        <p class="price">₹175</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://i0.wp.com/mostlymasala.com/wp-content/uploads/2021/12/2F7CFC73-F617-467A-BB4A-F35D7BB1E339.jpeg?w=1380&ssl=1">
+        <h3>Chicken Manchurian</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.kitchensanctuary.com/wp-content/uploads/2020/04/Chicken-Fried-Rice-square-FS-.jpg">
+        <h3>Chicken Fried Rice</h3>
+        <p class="price">₹210</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://recipes.timesofindia.com/thumb/54308405.cms?imgsize=510571&width=800&height=800">
+        <h3>Chicken Dum Biryani</h3>
+        <p class="price">₹200</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://ministryofcurry.com/wp-content/uploads/2020/11/achari-chicken_-2-850x1275.jpg">
+        <h3>Achari Chicken</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://theyummydelights.com/wp-content/uploads/2020/05/chicken-masala-6.jpg">
+        <h3>Chicken Masala</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/11/Chicken-Chettinad-Thumbnail.jpg">
+        <h3>Chicken Chettinad Gravy</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.TkRx4SFM5Zg3zkxfh3gNkgHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Schezwan Chicken</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.RtPAmg5zZ3vFW3I4NyWqwQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Chicken Pakora</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2022/08/Shutterstock_1237679371.jpg">
+        <h3>Chilli Chicken</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://theyummydelights.com/wp-content/uploads/2020/07/kolhapuri-chicken-curry-9.jpg">
+        <h3>Chicken Kolhapuri</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://1.bp.blogspot.com/-0PEsOabF_pI/Vx0G5N3130I/AAAAAAAAVyo/uVSjjYYLQSs7qUMkaM65hQGmCCT6HgeAwCLcB/s1600/chicken%2Bkorma.JPG">
+        <h3>Chicken Kurma</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.23c6fd95be2ac5866e2f1dcecb778c3e?rik=KJ6PGxY9izSV0g&riu=http%3a%2f%2fwww.flavorquotient.com%2fwp-content%2fuploads%2f2020%2f04%2fChicken-Tikka-FQ-4-1-of-1.jpg&ehk=t1SepO2anYLCBirSJiLQLE0Mg6CqbFWVGoTZE1Fxy1o%3d&risl=&pid=ImgRaw&r=0">
+        <h3>Chicken tikka</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/chicken-butter-masala-recipe.jpg">
+        <h3>Chicken Butter Masala</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.fa27ff33fafe9c93673435bd707254a1?rik=xAO%2fR6H2WRYEJw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-HTLyMKx16WI%2fUvPbSojKrnI%2fAAAAAAAAF7I%2fqq-1EU5XO7o%2fs1600%2fchicken%2b65-001.JPG&ehk=RtTDE8SoULdJLCEsbb%2f0rfPhEbFKtFiQWRkfSbYEapI%3d&risl=&pid=ImgRaw&r=0">
+        <h3>Chicken 65</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Grilled-Chicken-Sandwich-750x750.jpg">
+        <h3>Chicken Sandwich</h3>
+        <p class="price">₹200</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.ifmVg5iocgVSl6HYmxoy_gHaJ-?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Palak Chicken</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://cafedelites.com/wp-content/uploads/2018/04/Best-Chicken-Tikka-Masala-IMAGE-1.jpg">
+        <h3>Chicken Tikka Masala</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://spiceeats.com/wp-content/uploads/2020/06/Bhuna-Chicken.jpg">
+        <h3>Chicken Bhuna</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.Tw4lvGEEX6gubV3qx09ZuAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Kadai Chicken</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.jocooks.com/wp-content/uploads/2021/08/chicken-jalfrezi-1-11.jpg">
+        <h3>Chicken Jalfrezi</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.8tUutdYrLp3krxvmjYE5OAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Shami Kabab Chicken</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.chilitochoc.com/wp-content/uploads/2022/11/chicken-malai-boti-with-green-chutney-1.jpg">
+        <h3>Malai Chicken</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.PO09rnWbRj-ubRPWWU3ZXQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Chicken Seekh Kabab</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item" data-name="Cheese Pizza">
+        <img src="https://lh3.googleusercontent.com/rNns3fLSB6agVZm-JIocrTO261oS3rfMLlaec-SspxWOQ1qa7ZMo0ATdAB4cTVINIf2bgNNhEG_caTD61W4SmDvP3Jg=w360-rw" >
+        <h3>JAMMU & KASHMIR THALI</h3>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>  
+        </div>
+      <div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/t5gsYOS_qnYBbsijQPO-AX8Em-rTh_JLI5UTmlF53wv17PwkjtotmL02fxu-Xi3PbqdVKRy8kAKymQZ5fZzIGnCssgM=w360-rw">
+        <h3>HIMACHALI DHAM THALI </h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/mkBfWZF4bpdMxtQRmmni4KMthdDXC0XWDv8ixVNCyEzbM3w-kV9pmfPa-88E0pI3-pdPVFyanVXXpGklThbXesJyHkU=w360-rw">
+        <h3>HARYANA THALI</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/c2pMQmzDQXm5AFpfAnImFOYkn_MQAWIttpqGRxMu3jYlpbG9dpKwyii7kWq9uVYLgIACGIZTmh9VZinov66gvfXNgIQ=w360-rw">
+        <h3>KUMAONI THALI</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/7h0q3gcKJW8S6p4_5gZx7IZHLmbk_Fc3drQiJJpxb4GDbHZ51Mj6fz7SCfcVTIqCddlfkDxcVJni_gsRvDYyb854yD8=w360-rw">
+        <h3>PUNJAB THALI</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/lPOdCO1JqM4DzSwnQyQxoikywptke8gPINVGaATXkkodc8lhtay0AUQjNY5yQsIDOu9P7fI5oQ7iq_T4TXI1mxxmwJ4=w360-rw">
+        <h3>UTTAR PRADESH THALI</h3>
+        <p class="price">₹175</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/pDncHeQOfGK9XKEkb2ZDxdJHWVkND0BXmX5JL4EalC7w2Qai8IJU-OpjwHjWiKtDz24EyWv-Jn-PUvP2JLhGUSakrnhz=w360-rw">
+        <h3>Rajasthani thali</h3>
+        <p class="price">₹130</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/s0ZVBecseoFuDbOV1fF1iiWR9iOudRMPLc_IcTPkCDjVSxTkiMDHLXF2E8b7v2U2ZBnJuGJ-d3S0CXAyHnir5xEhNPg=w360-rw">
+        <h3>Gujarati Kathiawadi thali</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/A4V01ChhoWfGHpSxGE05JYGUqbBHS-3-xVZaEcbENn4szVdGRh0reIoPf1Xf8FrXSVgJsTE1YgsU8_zichCfgIdAH_g=w360-rw">
+        <h3>Maharashtrian thali</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/FIvPk7QZytAsR_06JInjWqR6muki_sdwNmCXQWPFQ63xxr5fMz7sFTf78a1eBp4lswNsSSZFgxJJx8sLsqEzHMOqqtw=w360-rw">
+        <h3>Goan Thali</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/pTbpUrB3LIdaEOKywUqzDiuNBIAE9nxhtGDa_8YI8aD0f2mcBuBlQs5z5kOe3prFN8l45dL51trE1znVG8sF4oNUNg=w360-rw">
+        <h3>Andhra Thali </h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/EmRKpFqEkJByn8J-B8sZcW6TYD-9JjjTAofpgE77za72VRoWLFrwTYk7JMTBgSeEAojjjHFt8cjpq5xhV4-QDu1kdmk=w360-rw">
+        <h3>Telangana Thali</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/Nt7rjXSrdEpNN4clYqKqNwxgo5mNnl4GFjrJwLA89_Yf0G70jLaOwVD3nUiwp8OgyI0VZzc6zRWkY7K93B6HuJi_amE=w360-rw">
+        <h3>Karnataka thali</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/2rQ_h_UmhlnWlX9VAewJpMjjZZ51jsNU7_HnBy6_7HnWtYbCCU9f3UrbhUW0ij_DEWwQLfADYN9aOD00vcdkRCrA3YY=w360-rw">
+        <h3>Kerala Sadhya thali</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/fCo8lfFwDHW3j4-2mUrEIFGCfucdQe1SCKUUyd-K4U3DBVXPwenPehkR2CYovfeWhUr6bnONkj9qx_dpe7RR2DoMXUJX=w360-rw">
+        <h3>TAMIL SAPPADU/ CHETTINAD THALI</h3>
+        <p class="price">₹110</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/p2TBuZeoro5SN980cLQNE7wk9qD8iZoiV0LIfIVRlT9f3YqhC3SFkx6ePALIuCGMJRJP6hhOKRNN-VjsD5qjNGF6wc0=w360-rw">
+        <h3>BHOJPURI THALI </h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/asLohKLq0Q6JYKK6Crx9dNYY7bDhez4ePuUXUHJnuJbpifV2hD7HMrZ1XZekmVc9IXXZbyga6OY8G-DRUg51lCWXIQ=w360-rw">
+        <h3>Jharkhand Thali</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/VWCbwSFMRdSVKj-F5J7OgRI29-bnBJ5Mt5Q7gIQX8Lc85JVaS3uR4SvNNED8eDZvNewZi44IKt_8DnEUj4Rm_MdTPTyD=w360-rw">
+        <h3>Dalma Oriya thali</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/QjJ7GTcnOIJXKvrGARgCsXbEDFSEyEZg2bFVDEN6kQqJ-xGyXOVq1sjC5BdPCmKQc2ALR6GDZM67F5lw3_N_kb62WJ87=w360-rw">
+        <h3>Bengali thali</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/5zQHD2bDd2EqXfd64d7EvBAfxn1aVSMRq_TYXfMt5Gue0LGlfX1c7o-o3OtlrojXQ8gPv7CFP8P1U-1uQ4uluFo7wq3O=w360-rw">
+        <h3>Chattisgarhi thali</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/sCDWO963C3go36OL8jRRqEJpniqCNIWlBktH_zWfq4fSZSF-QaOCACawc4qoE9B6Oe56JWpSYfNJuJutlQZjrYt6jQ0=w360-rw">
+        <h3>MADHYA PRADESH THALI</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/dgi4Mys58mIXHO3KuheM5jem-djzFht8Ph0ya23KqlU1wgfQAKo7jJVfpBvyZ-rVyijzACDAsPmHFIYISf8NyAEc3j8=w360-rw">
+        <h3>AALOHIR EXAJ/ ASSAMESE THALI</h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/BTw5EP7C850-sJeFXQCQw3FjKDO1IAB1nEjTOCzuqqhUKoa6SimBgPAue3SJn7n0K_p0KaewxopxT-oGLecaZtO3BDc=w360-rw">
+        <h3>MANIPURI THALI</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/hMi5OId3k2CFSRE9pmHubSqkHKi--rOKHveKK2-4RpG6jYnVZAXG2K_WRYMyBvvqcdtXQPp7waXdCrKkP8o9wRztm5g=w360-rw">
+        <h3>Sikkimese thali</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/Gp419-HTEEkuSsWzG7vTjgeBVyCXqnBXG56FgCvtvRDzbJxIoB74C1P0kYmb0lNKlUo1B4x6dHmfRoi4S8xjmePvNg=w360-rw">
+        <h3> Meghalaya Thali</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/oFaGRLXmdaX2XwhraDqzDJDm9uyCdEkcPiO9uPUUXtcfqVUJxAy_W-gB-KE6njnvHv5a_iZvuYgET5LrXm2dUs76rvI=w360-rw">
+        <h3>ARUNACHAL PRADESH THALI</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/laoeb8ID9zMXCZBs_K8eE5_k_9dhKPbTz2pS6VeKiIbhQwRGy8kvz6FFTkwrbQRjr19uTO24NV9V7rSMqPmqGua06w=w360-rw">
+        <h3>MIZO CHAWHMEH THALI</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/hg-m9e1iS6Dpx13au3Ol4xLboUSsQtfPHis9U8FjM7PUZNNjIdYENm_9I7Eiz3JF57iDpY5nqJjUrqXO5UtRjvqbHQ=w360-rw">
+        <h3>NAGALAND THALI</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://lh3.googleusercontent.com/w6LGiaNrz_TYSmRcIlQTPVtDD0J0z3YxDYwJb-L8ejGTlG3GT8-bUQIlVA3xujvZGVeD8WHX1WA0YP1yH-iAwlBtgw=w360-rw">
+        <h3>MUI BOROK THALI</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item" data-name="Cheese Pizza">
+        <img src="https://images.getrecipekit.com/20220517161300-5050burger_web.jpg?width=650&quality=90&auto_optimize=medium" >
+        <h3>50/50 Burger</h3>
+        <p class="price">₹199</p>
+        <a href="checkout.html" class="btn">Order Now</a>  
+        </div>
+      <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.u14W5ZA7JMAy5jE5BgMYzgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Angus Burger</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.OvKTPGbJoRQ1dVpHcYO1TAHaGJ?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Bøfsandwich</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.iSk8kF4bjAY-BXc0pR9QVgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Buffalo burger</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+ <div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.effc608cbc25da0ec018bf02ad0fc244?rik=8hLWcrka63VHGw&riu=http%3a%2f%2fimages.heb.com%2fis%2fimage%2fHEBGrocery%2frecipe-hm-large%2fchili-burger-recipe.jpg&ehk=NpsPGxrzUOO%2f1Rz9amrJHB7I%2f7%2fCLcYiS4XXe0afbkI%3d&risl=&pid=ImgRaw&r=0">
+        <h3>Chili burger</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://images.yummy.ph/yummy/uploads/2016/02/Chori-Burger640-1.jpg">
+        <h3>Chori burger</h3>
+        <p class="price">₹175</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.4405cf233c3b5016fb82d72d3d5a3584?rik=jQbfwENJ4ZEr%2bA&riu=http%3a%2f%2fs1.insidehook.com%2fHamDog_Header_1474400050.jpg&ehk=xA9ZvNfTsGLQekZTs6THEHB8GLDpl4V1XdUDa09%2fpaY%3d&risl=&pid=ImgRaw&r=0">
+        <h3>Hamdog</h3>
+        <p class="price">₹130</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.D8w43zkHfGLUvvAO2fvftAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Luther Burger</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.foodrepublic.com/wp-content/uploads/2012/03/recipe_pattymelt.jpg">
+        <h3>Patty melt</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.PgmwSkFnzDNNX9SZeLJ2ugHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Rice burger</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://www.chinesefoodwiki.org/images/c/c5/Roujiamo.jpg">
+        <h3>Roujiamo</h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/R.68df2c38d720d4301bdf4d71d162329a?rik=wpU5aptdRfD%2fjg&riu=http%3a%2f%2fitbakesmehappy.com%2fwp-content%2fuploads%2f2018%2f01%2fClub-Slider-1-680x1020.jpg&ehk=qEWOthrM%2bv%2fiPc3%2bgspL5OmMNtwIA%2fXMgf73ZVRyQYU%3d&risl=&pid=ImgRaw&r=0">
+        <h3>Slider</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.C95hPVxpvjmUe_JmfdhavwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Slopper</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://loveincorporated.blob.core.windows.net/contentimages/gallery/4b697d11-e4e8-4fc0-af2c-e3e48a9586ed-hardship_foods_slugburger.jpg">
+        <h3>Slugburger</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://cdn.tasteatlas.com/images/dishrestaurants/0487e144e34949a0b226bf12e56d693f.jpg?w=600&h=400">
+        <h3>Steamed cheeseburger</h3>
+        <p class="price">₹110</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://i2.wp.com/fullofplants.com/wp-content/uploads/2018/01/smoky-tempeh-black-bean-burgers-thumb.jpg?fit=1316%2C1315&ssl=1">
+        <h3>Tempeh burger</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://i.ytimg.com/vi/XwWmGYYRR-I/maxresdefault.jpg">
+        <h3>Afghani burger</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg">
+        <h3>Cheeseburger</h3>
+        <p class="price">₹140</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/coconut-shrimp-burger-index-67d090b7b5f79.jpg?crop=0.889xw:1.00xh;0.0593xw,0&resize=1200:*">
+        <h3>Coconut burger</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://images.squarespace-cdn.com/content/v1/616898231ce3a10ec35b1111/503d9a47-996a-4193-8362-2b77c2c34ff1/0797949A-5012-4135-985F-3801B7FD7C1D.jpg">
+        <h3>Fat Boy</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.PW10d9xYeDCGBtjHNRUz4wHaGe?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Kimchi burger</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://dishingouthealth.com/wp-content/uploads/2021/04/SalmonBurgersUpdate_Styled3-1024x1536.jpg">
+        <h3>Salmon burger</h3>
+        <p class="price">₹120</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://assets.marthastewart.com/styles/wmax-1500/d27/med105744_0710_ausie_burger/med105744_0710_ausie_burger_sq.jpg?itok=1zoYD1-g">
+        <h3>Aussie burger</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://groundbeefrecipes.com/wp-content/uploads/double-bacon-cheeseburger-recipe-6.jpg">
+        <h3>Bacon Cheese Burger</h3>
+        <p class="price">₹150</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.JpPzDayqjB2T-K9RCkhIswHaHa?w=128&h=108&c=7&bgcl=72b7e9&r=0&o=6&pid=13.1">
+        <h3>Banquet burger</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th?id=OVFT.JpX-p8wRtbVkH2qjwXTkfi&pid=News&w=300&h=186&c=14&rs=2&qlt=90">
+        <h3>California burger</h3>
+        <p class="price">₹190</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.-MJyeATFXynH0BjcBzDUZAHaHa?w=298&h=298&c=10&rs=1&bgcl=fffffe&r=0&o=6&pid=23.1">
+        <h3>Carolina burger</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.GsJvfKeoVmonTVErtbUsFAHaK_?w=80&h=80&c=1&bgcl=5bebab&r=0&o=7&pid=ImgRC&rm=3">
+        <h3>Green chile burger</h3>
+        <p class="price">₹170</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tarasmulticulturaltable.com/wp-content/uploads/2019/06/Islak-Burger-3-of-3-1024x683.jpg">
+        <h3>Islak Burger</h3>
+        <p class="price">₹180</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.2-S4GYuvi_vLclLKtG8JTAHaFj?w=298&h=222&c=10&rs=1&bgcl=fffffe&r=0&o=6&pid=23.1">
+        <h3>Oklahoma onion burger</h3>
+        <p class="price">₹179</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.kUKy7ThV8ygAXJ5UMaGxvwHaD4?w=80&h=80&c=1&bgcl=15ef82&r=0&o=7&pid=ImgRC&rm=3">
+        <h3>Olive burger</h3>
+        <p class="price">₹175</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP._1f_a4yHlc7MBTCaYaIQzwHaGZ?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Pastrami burger</h3>
+        <p class="price">₹160</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.HIIQ3sjcMDYw39hM3-sbvwHaLH?w=80&h=80&c=1&bgcl=fadd13&r=0&o=7&pid=ImgRC&rm=3">
+        <h3>Steak burger</h3>
+        <p class="price">₹210</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+<div class="menu-item">
+        <img src="https://th.bing.com/th/id/OIP.7f0qruMGbQOQXvOd_Z_ukgHaLG?w=80&h=80&c=7&o=6&pid=13.1">
+        <h3>Teriyaki burger</h3>
+        <p class="price">₹200</p>
+        <a href="checkout.html" class="btn">Order Now</a>
+</div>
+</div>
+  </section>
+    </div>
+  </div>
+</body>
+</html>

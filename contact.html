@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Maha Recipe</title>
+   <link rel="icon" href="image.png">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="contact" href="contact.js">
+</head>
+<body>
+  <header>
+    <h1>📞 Contact Us</h1> 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="checkout.html">Order</a>
+      <a href="auth.html">Login</a>
+    </nav>
+  </header>
+<center>
+  <main>
+    <h2>Contact Us – Delivery Feedback</h2>
+
+<form id="feedbackForm">
+  <label>Name:</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label>Email:</label><br>
+  <input type="email" name="email" required><br><br>
+
+  <label>Feedback on Delivery:</label><br>
+  <textarea name="message" rows="5" required></textarea><br><br>
+
+  <button type="submit">Send Feedback</button>
+</form>
+
+<p id="status"></p>
+
+<script>
+  document.getElementById('feedbackForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message')
+    };
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    document.getElementById('status').textContent = result.message;
+    this.reset();
+  });
+</script>
+
+  </main>
+</center>
+  <footer>
+    <p>© 2025 Maha Recipe. All rights reserved.</p>
+    <div class="socials">
+      <a href="#" title="Instagram">📸</a>
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter">🐦</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      this.style.display = "none";
+      document.getElementById("thankYou").style.display = "block";
+    });
+  </script>
+</body>
+</html>
